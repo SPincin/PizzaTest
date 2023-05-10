@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PizzaTest.Toppings
 {
-    internal class FunghiDecorator : ToppingPizzaDecorator
+    public class FunghiDecorator : ToppingPizzaDecorator
     {
         public FunghiDecorator(IPizza pizza) : base(pizza)
         {
@@ -15,12 +15,12 @@ namespace PizzaTest.Toppings
 
         public override string GetDescription()
         {
-            return $"{_pizza.GetDescription()}, Prosciutto Cotto";
+            return $"{_pizza.GetDescription()}, Funghi";
         }
 
         public override int GetPrice()
         {
-            return _pizza.GetPrice() + 1;
+            return _pizza.GetPrice() + 2;
         }
     }
 }

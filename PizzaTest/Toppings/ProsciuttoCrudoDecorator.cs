@@ -7,20 +7,20 @@ using System.Threading.Tasks;
 
 namespace PizzaTest.Toppings
 {
-    internal class ProsciouttoCottoDecorator:ToppingPizzaDecorator
+    public class ProsciuttoCrudoDecorator : ToppingPizzaDecorator
     {
-        public ProsciouttoCottoDecorator(IPizza pizza) : base(pizza)
+        public ProsciuttoCrudoDecorator(IPizza pizza) : base(pizza)
         {
         }
 
         public override string GetDescription()
         {
-            return $"{_pizza.GetDescription()}, Prosciutto Cotto";
+            return $"{_pizza.GetDescription()}, Prosciutto Crudo";
         }
 
         public override int GetPrice()
         {
-            return _pizza.GetPrice() + 1;
+            return _pizza.GetPrice() + 2;
         }
     }
 }

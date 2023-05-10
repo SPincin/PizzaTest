@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace PizzaTest.BasePizza
 {
     public class FactoryBase:IFactoryBase
+
     { 
         public IPizza CreatePizza(string type)
         {

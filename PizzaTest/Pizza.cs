@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace PizzaTest
 {
-    internal class Pizza
+    internal class Pizza : IPizza
     {
+        public string GetDescription() => string.Empty;
+
+        public int GetPrice() => 0;
+        
     }
 }

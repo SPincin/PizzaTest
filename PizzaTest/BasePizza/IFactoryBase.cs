@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PizzaTest.BasePizza
 {
-    internal interface IFactoryBase
+    public interface IFactoryBase
     {
         IPizza CreatePizza(string type);
     }
